@@ -1,0 +1,389 @@
+html {
+    --primary-font-color: black;
+    --secondary-font-color: white;
+    --primary-background-color: white;
+    --main-background-color: #F4F2F6;
+    --logo-img: url(./img/header-logo.png);
+    --main-img: url(./img/main-light.png);
+    --bg-image: url(https://pibig.info/uploads/posts/2022-08/1659393382_5-pibig-info-p-stilnii-belii-fon-krasivo-5.jpg);
+    --event-bg: lightcyan;
+    --youtube-bg: rosybrown;
+    --swiper-one: lightblue;
+    --swiper-two: lightcyan;
+    --swiper-three: lightseagreen;
+  }
+  
+  .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  
+  .header {
+      background: var(--primary-background-color);
+      transition: ease all .3s;
+      padding: 37px 0;
+      position: sticky;
+      left: 0;
+      top: 0;
+      z-index: 999;
+  }
+  
+  .header__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .header_menu {
+      display: flex;
+      align-items: center;
+  }
+  
+  .header_theme {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .header_theme__button {
+      font-family: 'Inter';
+      font-style: normal;
+      font-size: 10px;
+      line-height: 20px;
+      font-weight: bold;
+      color: black;
+      margin-left: 16px;
+      width: 90px;
+      height: 30px;
+      border: 0;
+  }
+  
+  .header_theme__button:nth-of-type(1) {
+      margin-bottom: 5px;
+      background-color: white;
+      border: 1px solid black;
+  }
+  
+  .header_theme__button:nth-of-type(2) {
+      background-color: black;
+      color: white;
+      border: white 1px solid;
+  }
+  
+  .header_menu__link {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      color: var(--primary-font-color);
+      transition: ease all .3s;
+      margin-left: 16px;
+      text-decoration: none;
+  }
+  
+  .header__logo {
+      background: var(--logo-img);
+      transition: ease all .3s;
+      width: 72px;
+      height: 63px;
+      background-size: cover;
+  }
+  
+  .header_menu__link:nth-of-type(1) {
+      margin-left: 0;
+  }
+  
+  .main {
+      padding: 215px 0;
+      background: var(--main-background-color);
+      transition: ease all .3s;
+  }
+  
+  .main__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .main_left__title {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 58px;
+      color: var(--primary-font-color);
+      transition: ease all .3s;
+      margin-bottom: 55px;
+  }
+  
+  .main_left__text {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 30px;
+      color: var(--primary-font-color);
+  }
+  
+  .main-right__img {
+      background-image: var(--main-img);
+      transition: ease all .3s;
+      background-size: 100% 100%;
+      width: 600px;
+      height: 257px;
+  }
+  
+  .about {
+      padding: 237px 0 100px;
+      width: 100%;
+      transition: ease all .3s;
+      background: var(--bg-image) center/cover no-repeat;
+  }
+  
+  .about__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .about_title {
+      transition: ease all .3s;
+      color: var(--primary-font-color);
+      font-size: 50px;
+      font-style: italic;
+      font-weight: bold;
+      margin-bottom: 50px;
+  }
+  
+  .about_text {
+      transition: ease all .3s;
+      color: var(--primary-font-color);
+      font-size: 30px;
+      font-style: bold;
+  }
+  
+  .about__img {
+      border-radius: 50px;
+      width: 600px;
+      margin-bottom: 50px;
+  }
+  
+  .youtube {
+      background-color: var(--youtube-bg);
+      padding: 137px 0;
+  }
+  
+  .youtube__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .youtube__title {
+      font-size: 60px;
+      background-color: red;
+      padding: 15px;
+      border-radius: 15px;
+      color: var(--primary-font-color);
+      margin-bottom: 30px;
+      transition: ease all .3s;
+  }
+  
+  .tiktok {
+      background-color: var(--primary-background-color);
+      padding: 137px 0;
+      transition: ease all .3s;
+  }
+  
+  .tiktok__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .tiktok__title {
+      font-size: 60px;
+      background-color: orange;
+      padding: 15px;
+      border-radius: 15px;
+      color:var(--primary-font-color);
+      transition: ease all .3s;
+  }
+  
+  .event {
+      background-color: var(--event-bg);
+      transition: ease all .3s;
+      padding: 50px 0;
+  }
+  
+  .event__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  
+  .event__title {
+      color: var(--primary-font-color);
+      font-size: 50px;
+      text-align: center;
+      margin-bottom: 30px;
+      transition: ease all .3s;
+  }
+  
+  .event__btns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  }
+  
+  .event__btn {
+      background-color: var(--primary-font-color);
+      color: var(--secondary-font-color);
+      width: 250px;
+      height: 55px;
+      border: 0;
+      padding: 10px 5px;
+      cursor: pointer;
+      transition: ease all .3s;
+      font-size: 15px;
+  }
+  
+  .event__btn:hover {
+      border-radius: 50px;
+      color: blue;
+  }
+  
+  .name {
+      font-size: 25px;
+      font-weight: bold;
+      color: var(--primary-font-color);
+      transition: ease all .3s;
+      font-style: italic;
+      border-bottom: var(--primary-font-color) 2px solid;
+      padding-bottom: 3px;
+      width: max-content;
+  }
+  
+  .swiper-slide {
+      padding: 50px 0;
+      display: flex !important;
+      align-items: center;
+      justify-content: space-around;
+  }
+  
+  .swiper-text {
+      font-size: 50px;
+      font-weight: bold;
+      font-family: 'Inter';
+      color: var(--primary-font-color);
+  }
+  
+  .swiper-slide:nth-of-type(1) {
+      background-color: var(--swiper-one);
+      font-size: 30px;
+  }
+  
+  .swiper-slide:nth-of-type(2) {
+      background-color: var(--swiper-two);
+      font-size: 30px;
+  }
+  
+  .swiper-slide:nth-of-type(3) {
+      background-color: var(--swiper-three);
+      font-size: 30px;
+  }
+  
+  .swiper_img {
+      height: 400px;
+  }
+  
+  .section-creator {
+      background-color: var(--youtube-bg);
+      padding: 25px 0;
+  }
+  
+  .section-creator__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 50%;
+      margin: 0 auto;
+  }
+  
+  .section-creator__input, .section-creator__button {
+      border: 0;
+      padding: 10px 20px;
+      font-size: 20px;
+      width: 200px;
+  }
+  
+  .section-creator__wrapper div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      width: 100%;
+  }
+  
+  .section-creator__input {
+      width: 300px;
+  }
+  
+  .project {
+      background-color: bisque;
+      padding: 25px 0;
+  }
+  
+  .project__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .project__left {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+  }
+  
+  .project__title {
+      font-size: 40px;
+      font-style: bold;
+      margin-bottom: 50px;
+  }
+  
+  .project__text {
+      border: navy;
+      padding: 25px 30px;
+      color: white;
+  }
+  
+  .project__img {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 400px;
+      height: 200px;
+  }
+  
+  html[theme='dark'] {
+      --primary-font-color: white;
+      --primary-background-color: black;
+      --logo-img: url(./img/logo-dark.jpg);
+      --main-background-color: #121212;
+      --bg-image: url(https://png.pngtree.com/background/20211217/original/pngtree-background-elegant-black-with-gold-line-side-3-picture-image_1576412.jpg);
+      --event-bg: darkblue;
+      --main-img: url(./img/main-img.png);
+      --secondary-font-color: black;
+      --youtube-bg: rebeccapurple;
+      --swiper-one: navy;
+      --swiper-two: darkcyan;
+      --swiper-three: rgb(16, 68, 65);
+  }

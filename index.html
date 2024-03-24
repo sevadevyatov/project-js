@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fasthand&family=Inter&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <a href="#" class="header__logo">
+                    
+                </a>
+                <div class="header_menu">
+                    <a href="#main" class="header_menu__link">Главная</a>
+                    <a href="#about" class="header_menu__link">Об авторе</a>
+                    <a href="#" class="header_menu__link">О сайте</a>
+                    <a href="#" class="header_menu__link">специальные функции</a>
+                    <div class="header_theme">
+                        <button id="light" class="header_theme_button">
+                        светлая тема
+                        </button>
+                        <button id="dark" class="header_theme_button">
+                            темная тема
+                        </button>
+                    </div>
+                </div>
+                 </div>
+          </div>
+
+<body>
+    <main>
+        <section class="main" id="main">
+            <div class="wrapper">
+                <div class="main_wrapper">
+                    <div class="main_left">
+                       <h1 class="main_left_title">пораграф</h1>
+                       <p class="main_left_text">И его тема...</p>
+          
+                    </div>
+                    <div class="main_right main-right__img"></div>
+                        <img src="image 1.png" alt="" class="main_right_img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="wrapper">
+                <div class="about__wrapper">
+                    <h1 class="about_title">Это какой-то текст </h1>
+                    <img src="soda.jpg" alt="" class="middle_img">
+                    <h2 class="about_text">На самом деле я песвегетариан </h2>
+                    <p class="about_text">Я люблю пельмени</p>
+                </div>
+            </div>
+        </section>
+        <section class="youtube" id="youtube">
+            <div class="wrapper">
+                <div class="youtube_wrapper">
+                    <h1 class="youtube_title">Видео </h1>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/s9oQRKsROF8?si=xw57dqXHgwO2SRM7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                </div>
+            </div>
+        </section>
+        <section class="tiktok" id="tiktok">
+            <div class="wrapper">
+                <div class="tiktok_wrapper">
+                    <h1 class="tiktok_title">тикток</h1>
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@amazinganimalsinc/video/7208287605488651566" data-video-id="7208287605488651566" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@amazinganimalsinc" href="https://www.tiktok.com/@amazinganimalsinc?refer=embed">@amazinganimalsinc</a> 5 baby capybaras <a title="capybara" target="_blank" href="https://www.tiktok.com/tag/capybara?refer=embed">#capybara</a> <a title="capybaby" target="_blank" href="https://www.tiktok.com/tag/capybaby?refer=embed">#capybaby</a> <a title="capybaratiktok" target="_blank" href="https://www.tiktok.com/tag/capybaratiktok?refer=embed">#capybaratiktok</a> <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a> <a title="foryou" target="_blank" href="https://www.tiktok.com/tag/foryou?refer=embed">#foryou</a> <a title="amazinganimalsinc" target="_blank" href="https://www.tiktok.com/tag/amazinganimalsinc?refer=embed">#amazinganimalsinc</a> <a target="_blank" title="♬ Capybara - Сто-Личный Она-Нас &#38; BETSY" href="https://www.tiktok.com/music/Capybara-7121057779804833794?refer=embed">♬ Capybara - Сто-Личный Она-Нас &#38; BETSY</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                </div>
+            </div>
+        </section>
+        <section class="event" id="event">
+            <div class="wrapper">
+                <div class="event_wrapper">
+                    <h2 class="event_title">секция события</h2>
+                    <div class="event__btns">
+                        <button onclick="show2Texts()" class="event__btn">1</button>
+                        <button onclick="howoldareu()" class="event__btn">2</button>
+                        <button onclick="whatdoulike()" class="event__btn">3</button>
+                        <button onclick="cnslbtn()" class="event__btn">4</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">шпиц
+                <img src="шпиц.jpg" alt="" class="swiper_slide_picture">
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>  
+        </div>
+        <section class='section-creator'>
+            <div class="wrapper">
+                <form class="section-creator__wrapper">
+                    <div>
+                        <input id="titleCreator" class="section-creator__input" type="text"
+                        placeholder="Введите заголовок">
+                        <button id="addTitle" class="section-creator__button" type="button">
+                            Добавить заголовок
+                        </button>
+            </div>
+            <div>
+                <input id="imgCreator" placeholder="Вставьте сылку на картинку"
+                class="section-creator__input" type="text">
+                <button id="addImage" class="section-creator__button" type="button">
+                    Добавить картинку
+                </button>
+            </div>
+            <div>
+                <textarea id="textCreator" class="section-creator__input"
+                placeholder="Напишите текст">
+                </textarea>
+                <button id="addText" class="section-creator__button">
+                 Добавить текст
+                </button>
+            </div>
+        </form>
+            </div>
+        </section>
+        <section class="project">
+            <div class="wrapper">
+                <div class="project__wrapper">
+                    <div class="project__left">
+                    <h2 id="projectTitle" class="project__title">
+                            заголовок
+                        </h2>
+                        <p id="projectText" class="project__text">
+                            Тексе текст текст текст текст текст текст текст 
+                        </p>
+                    </div>
+                    <div id="projectImg" class="project__img">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+        
+    </script>
+    <script>
+        const swiper = new swiper(".mySwiper",{
+            efect:'flip',
+            autoplay: true,
+        })
+    </script>
+</body>
+</html>
+
